@@ -1,0 +1,61 @@
+{
+   "request": [
+      {
+         "locale": "LTH",
+         "page_size": 400,
+         "search": {
+            "account_id": "1-2TIZIT",
+            "balance": true,
+            "charges": false
+         },
+         "user": "TEST_ROLE_13"
+      }
+   ],
+   "response": [
+      {
+         "code": "SUCCESS",
+         "message": "",
+         "id": "965d0a80-2bac-43d8-9dd4-8c7d6bfe46ca",
+         "legal_entity": 17,
+         "data": {
+            "status_lic": "Next Invoice",
+            "ba_id": "1-2TIZIT",
+            "billing_account_nr": "850143285",
+            "billing_account_type": "Residential",
+            "billing_account_sub_type": "Residential",
+            "balance": {
+               "balance": 0,
+               "balance_type": "ACCOUNT",
+               "unbilled_usage": 45.2,
+               "unbilled_usage_excl_vat": 0,
+               "billed_not_due": 0,
+               "billed_over_due": 0,
+               "invoice_fee": 0,
+               "account_specification_fee": 0,
+               "account_recurring_fee": 0,
+               "account_installment_fee": 0,
+               "account_one_off_charge": 0,
+               "account_adjustments": 0,
+               "account_invoice_discount": 0,
+               "service_adjustments_total": 0,
+               "service_installment_fee_total": 0,
+               "service_invoice_discount_total": 0,
+               "service_one_off_charge_total": 0,
+               "service_recurring_fee_total": 0,
+               "service_specification_fee_total": 0,
+               "err_code": "",
+               "err_msg": ""
+            },
+            "total": 45.2,
+            "response_code": "",
+            "response_message": "",
+            "response_status": "SUCCESS",
+            "invoice_nr": "",
+            "ocr_nr": "",
+            "due_date": "",
+            "invoice_date": "",
+            "outstanding_amount": ""
+         }
+      }
+   ]
+}

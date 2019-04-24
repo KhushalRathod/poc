@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Mobile_voice_services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mobile_voice_services_font-awesome.min.css">
+    <link rel="stylesheet" href="css/mobile_voice_services_jquery.circliful.css">
+    <link rel="stylesheet" href="css/mobile_voice_services_jquerysctipttop.css">
+    <link rel="stylesheet" href="css/mobile_voice_services.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/mobile_voice_services_jquery.circliful.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/fontawesome.css">
+
+</head>
+
+<body>
+
+    <div class="col-xs-4">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <h4 class="blue-text"><b> Current Usage </b></h4>
+                            </div>
+                            <div class="col-xs-4">
+                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-download"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-phone"
+                                        aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <div id="myStat2" data-dimension="250" data-text="100 MB" data-info="Remaining" data-width="30"
+                            data-fontsize="38" data-percent="35" data-fgcolor="#61a9dc" data-bgcolor="#9F9F9F"
+                            class="circliful" style="width: 250px;height: 250px;">
+                        </div>
+                    </div>
+                    <nav>
+                        <span class="active"><a href="#subcomponents" target="_self">Subcomponents / </a></span>
+                        <span class=""><a href="#balance" target="_self">Balance (incl.VAT)</a></span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#myStat2').circliful();
+        });
+    </script>
+
+</body>
+
+</html>

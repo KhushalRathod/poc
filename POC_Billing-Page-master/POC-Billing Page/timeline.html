@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Timeline</title>
+    <style>
+        .yellow-rounded {
+            background: #fff9d3;
+            border: 1px solid #fff9d3;
+            border-radius: 25px;
+            /*padding: 0 15px ;*/
+            min-width: 50px;
+            text-align: center;
+            color: #3a3a3a;
+        }
+
+        .border-right {
+            border-right: 1px solid gray !important;
+        }
+
+        .col-md-9 span {
+            position: absolute;
+        }
+
+        .col-md-9 span::before {
+            content: "";
+            position: absolute;
+            border-top: 1px solid #3a3a3a;
+            width: 13px;
+            top: 50%;
+            left: -16px;
+        }
+
+        .col-md-9 span::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #3a3a3a;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            top: 0%;
+            left: -4px;
+        }
+
+        #style-4::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: white;
+        }
+
+        #style-4::-webkit-scrollbar {
+            width: 7px;
+            background: white;
+        }
+
+        #style-4::-webkit-scrollbar-thumb {
+            background: #535353;
+        }
+
+        .col-md-2 {
+            display: block;
+            max-height: 600px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body ng-app="app">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2" id="style-4">
+                <div class="row" ng-controller="HelloWorldCtrl">
+                    <div class="col-md-3 border-right">
+                        <div class="row text-right" style="margin-bottom:100px;" ng-repeat="key in months">
+                            <p class="yellow-rounded">
+                                {{key}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <span ng-style="getStyle(datearr[0])" style="margin:auto" ng-repeat="datearr in processedDates">
+                            <i class="fa fa-scroll"></i>
+                            <ul class="list-inlne" style="display: inline;padding:0">
+                                <li class="list-inline-item" ng-repeat="date in datearr">
+                                    {{date.toDateString().substring(4)}}
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        angular.module("app", []).controller("HelloWorldCtrl", function ($scope) {
+            $scope.months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].reverse();
+            $scope.dates = [new Date("01/01/2019"), new Date("12/2/2019"), new Date("7/21/2019"), new Date("4/18/2019"), new Date("09/12/2019"), new Date("10/19/2019"), new Date("01/04/2019"), new Date("12/29/2019")];
+
+            //  $scope.dates = [new Date("01/01/2019"), new Date("01/03/2019")];
+
+            // $scope.dates=[];
+            // for(var i=1;i<=30;i++){
+            //     var d = new Date("01/"+i+"/2019");
+            //     $scope.dates.push(d);
+            // }
+
+
+
+            $scope.dates.sort(function (a, b) {
+                return a.getTime() - b.getTime();
+            })
+            $scope.curryear = "2019";
+            $scope.processedDates = [];
+
+            var dates = $scope.dates;
+            // console.log(dates.length);
+
+            for (var i = 0; i < dates.length; i++) {
+                var temp = [], cnt = 0, groupingFactor = 3;
+                temp.push(dates[i]);
+                for (var j = i + 1; j < dates.length; j++) {
+                    // console.log(dates[i].toDateString().substring(4),dates[j].toDateString().substring(4));
+                    // console.log(Math.abs(dates[i].getTime() - dates[j].getTime()) / 86400000);
+                    if (Math.abs(dates[i].getTime() - dates[j].getTime()) / 86400000 <= groupingFactor - 1) {
+                        temp.push(dates[j]); cnt++;
+                    } else break;
+                }
+                i += cnt;
+                $scope.processedDates.push(temp);
+            }
+
+            // console.log($scope.processedDates);
+
+            $scope.getStyle = function (date) {
+                // console.log(date);
+                var diff = Math.abs(new Date("01/01/" + $scope.curryear).getTime() - date.getTime());
+                var diffDay = diff / (86400000);
+                if (diffDay == 364) diffDay = 365;
+                if (diffDay == 1) diffDay = 0;
+                diffDay = 365 - diffDay;
+                // console.log(diffDay);
+                var percent = (diffDay * 100) / 365;
+                // console.log(percent);
+                if (percent < 50)
+                    return {
+                        "top": percent + "%"
+                    }
+                else return {
+                    "bottom": (100 - percent) + "%"
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+    "request": [
+        {
+            "locale": "LTH",
+            "ba_id": "1-2TIZIT",
+            "user": "TEST_ROLE_13"
+        }
+    ],
+    "response": [
+        {
+            "code": "SUCCESS",
+            "message": "",
+            "id": "9cfde458-1ea7-433d-8948-fe81fd162ac4",
+            "legal_entity": 17,
+            "data": [
+                {
+                    "brand": "Tele2"
+                }
+            ]
+        }
+    ]
+}

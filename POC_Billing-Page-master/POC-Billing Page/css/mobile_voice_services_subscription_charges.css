@@ -1,0 +1,36 @@
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 550;
+    font-size: 11px;
+}
+.fixed_header{
+    width: 400px;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  
+  .fixed_header tbody{
+  display:block;
+  width: 450px;
+  overflow: auto;
+  height: 200px;
+  }
+  
+  .fixed_header thead tr {
+   display: block;
+  }
+  
+  .fixed_header thead {
+  background: black;
+  color:#fff;
+  }
+  
+  .fixed_header th, .fixed_header td {
+  padding: 0px;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  }
+  

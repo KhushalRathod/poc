@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Order</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!--  Styles  -->
+    <style>
+        .blue-text {
+            color: #22a5d8;
+        }
+        
+        .red-text {
+            color: red;
+        }
+        
+        .green-text {
+            color: #4CAF50;
+        }
+        
+        .orange-text {
+            color:darkorange;
+        }
+        
+        h3 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .status {
+            font-size: 17px;
+            font-weight: 400;
+            padding-bottom: 4px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .glyph {
+            font-size: 15px;
+            padding-bottom: 6px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        #backbtn {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        #backbtn .btn {
+            border: 1px solid #4CAF50;
+            background-color: white;
+            color: black;
+            padding: 7px 0;
+            padding-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 85%;
+            margin-top: 15px;
+        }
+        
+        #backbtn .success:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        h4 {
+            font-weight: bold;
+        }
+        
+        table th {
+            background-color: #9F9F9F;
+            color: white;
+            border: 3px solid white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Cancelled -->
+    <div class="col-xs-4">
+        <div class="row">
+            <div class="col-xs-11">
+                <h3><span class="blue-text">Order 1-205899654</span>&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-minus-sign red-text glyph"></span>
+                    <span class="red-text status">Cancelled</span></h3>
+            </div>
+
+
+
+            <div class="col-xs-1" id="backbtn">
+                <button type="button" class="btn success btn-block"><span class="glyphicon glyphicon-remove"></span></button>
+            </div>
+            <div class="col-xs-6">
+                <label>Order Date:&nbsp</label>2018-08-13 <br>
+                <label>Billing Account:&nbsp</label>10020000283<br>
+            </div>
+            <div class="col-xs-6">
+                <label>MRC Total:&nbsp</label>1,82 &euro;<br>
+                <label>NRC Total:&nbsp</label>0 &euro;<br>
+                <label>Channel:&nbsp</label>Customer Service<br>
+            </div>
+            <div class="col-xs-12">
+                <h4 class="blue-text">Order Line Items</h4>
+            </div>
+            <div class="col-xs-12">
+                <table class="table table-hover ">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Primary Attribute Value</th>
+                            <th>Action</th>
+                            <th>Other Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="caret"></span> Mobile Voice Services</td>
+                            <td></td>
+                            <td>Add</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul style="list-style-type:circle;">
+                                    <li>PBX5</li>
+                                </ul>
+                            </td>
+                            <td></td>
+                            <td>Add</td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- complete -->
+    <div class="col-xs-4">
+        <div class="row">
+            <div class="col-xs-11">
+                <h3><span class="blue-text">Order 1-205899654</span>&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-ok-sign green-text glyph"></span>
+                    <span class="green-text status">Complete</span></h3>
+            </div>
+
+
+
+            <div class="col-xs-1" id="backbtn">
+                <button type="button" class="btn success btn-block"><span class="glyphicon glyphicon-remove"></span></button>
+            </div>
+            <div class="col-xs-6">
+                <label>Order Date:&nbsp</label>2018-08-13 <br>
+                <label>Billing Account:&nbsp</label>10020000283<br>
+            </div>
+            <div class="col-xs-6">
+                <label>MRC Total:&nbsp</label>1,82 &euro;<br>
+                <label>NRC Total:&nbsp</label>0 &euro;<br>
+                <label>Channel:&nbsp</label>Customer Service<br>
+            </div>
+            <div class="col-xs-12">
+                <h4 class="blue-text">Order Line Items</h4>
+            </div>
+            <div class="col-xs-12">
+                <table class="table table-hover ">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Primary Attribute Value</th>
+                            <th>Action</th>
+                            <th>Other Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="caret"></span> Mobile Voice Services</td>
+                            <td></td>
+                            <td>Add</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul style="list-style-type:circle;">
+                                    <li>PBX5</li>
+                                </ul>
+                            </td>
+                            <td></td>
+                            <td>Add</td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- new -->
+    <div class="col-xs-4">
+        <div class="row">
+            <div class="col-xs-11">
+                <h3><span class="blue-text">Order 1-205899654</span>&nbsp&nbsp&nbsp
+                    <span class="glyphicon glyphicon-cog orange-text glyph"></span>
+                    <span class="orange-text status">New</span></h3>
+            </div>
+
+
+
+            <div class="col-xs-1" id="backbtn">
+                <button type="button" class="btn success btn-block"><span class="glyphicon glyphicon-remove"></span></button>
+            </div>
+            <div class="col-xs-6">
+                <label>Order Date:&nbsp</label>2018-08-13 <br>
+                <label>Billing Account:&nbsp</label>10020000283<br>
+            </div>
+            <div class="col-xs-6">
+                <label>MRC Total:&nbsp</label>1,82 &euro;<br>
+                <label>NRC Total:&nbsp</label>0 &euro;<br>
+                <label>Channel:&nbsp</label>Customer Service<br>
+            </div>
+            <div class="col-xs-12">
+                <h4 class="blue-text">Order Line Items</h4>
+            </div>
+            <div class="col-xs-12">
+                <table class="table table-hover ">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Primary Attribute Value</th>
+                            <th>Action</th>
+                            <th>Other Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="caret"></span> Mobile Voice Services</td>
+                            <td></td>
+                            <td>Add</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul style="list-style-type:circle;">
+                                    <li>PBX5</li>
+                                </ul>
+                            </td>
+                            <td></td>
+                            <td>Add</td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
