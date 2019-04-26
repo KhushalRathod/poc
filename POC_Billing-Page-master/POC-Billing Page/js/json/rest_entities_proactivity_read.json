@@ -1,0 +1,42 @@
+{
+    "request1": [
+        {
+            "locale": "LTH",
+            "search": {
+                "ca_id": "1-AJJZE",
+                "group": "invoice_overdue",
+                "external": true
+            },
+            "user": "TEST_ROLE_13"
+        }
+    ],
+    "response1": [
+        {
+            "code": "SUCCESS",
+            "message": "",
+            "id": "aefebf84-b233-42c7-9763-a381fa91d2cd",
+            "legal_entity": 17,
+            "data": []
+        }
+    ],
+    "request2": [
+        {
+            "locale": "LTH",
+            "search": {
+                "ca_id": "1-AJJZE",
+                "group": "orders_in_progress",
+                "external": false
+            },
+            "user": "TEST_ROLE_13"
+        }
+    ],
+    "response2": [
+        {
+            "code": "HTTP_NO_DATA",
+            "message": "No data found",
+            "id": "972a0a61-9a79-49c8-b498-b874f8a5032d",
+            "legal_entity": 17,
+            "data": []
+        }
+    ]
+}
