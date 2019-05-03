@@ -1,82 +1,56 @@
-{
-   "request": [
-      {
-         "start_row": 1,
-         "page_size": 10,
-         "include_count": true,
-         "search": {
-            "id": "1-AJJZE",
-            "account_class": "Billing",
-            "account_status": "Active,Prospect,Suspended"
-         },
-         "locale": "LTH",
-         "user": "TEST_ROLE_13"
-      }
-   ],
-   "response": [
-      {
-         "code": "SUCCESS",
-         "message": "",
-         "id": "5144722a-8da9-439e-b65e-eda27040a192",
-         "legal_entity": 17,
-         "last_page": true,
-         "record_count": 2,
-         "data": [
-            {
-               "id": "1-AJJZJ",
-               "master_id": "1-AJJZE",
-               "account_class_lic": "Billing",
-               "secret_cust_acc": "N",
-               "account_class": "Billing",
-               "account_source": "CABS",
-               "account_type": "Residential",
-               "account_sub_type_lic": "Residential",
-               "treatment_start_dt": "",
-               "account_status_db": "Active",
-               "account_status": "Active",
-               "account_status_lic": "Active",
-               "account_nr": "850052444",
-               "account_name": "Damme Ievis",
-               "account_primary_addr_id": "1-2SEO0S",
-               "full_addr": "Gauja 1 - 9, LV-1111",
-               "adress_zip_code": "LV-1111",
-               "address_city": "",
-               "address_country": "Lithuania",
-               "attention_of": "",
-               "care_of": "",
-               "street_address": "Gauja",
-               "addr_num": "1",
-               "street_letter": "",
-               "appart_number": "9"
-            },
-            {
-               "id": "1-2TIZIT",
-               "master_id": "1-AJJZE",
-               "account_class_lic": "Billing",
-               "secret_cust_acc": "N",
-               "account_class": "Billing",
-               "account_source": "Singl.eView",
-               "account_type": "Residential",
-               "account_sub_type_lic": "Residential",
-               "treatment_start_dt": "",
-               "account_status_db": "Active",
-               "account_status": "Active",
-               "account_status_lic": "Active",
-               "account_nr": "850143285",
-               "account_name": "Damme Ievis",
-               "account_primary_addr_id": "1-1XBDN",
-               "full_addr": "Brivibai 13, Vilnius, test, test, Kanaada, LT-1234",
-               "adress_zip_code": "LT-1234",
-               "address_city": "Vilnius",
-               "address_country": "Lebanon",
-               "attention_of": "",
-               "care_of": "",
-               "street_address": "Brivibai",
-               "addr_num": "13",
-               "street_letter": "a",
-               "appart_number": ""
-            }
-         ]
-      }
-   ]
-}
+[
+   {
+      "id": "1-AJJZJ",
+      "master_id": "1-AJJZE",
+      "account_class_lic": "Billing",
+      "secret_cust_acc": "N",
+      "account_class": "Billing",
+      "account_source": "CABS",
+      "account_type": "Residential",
+      "account_sub_type_lic": "Residential",
+      "treatment_start_dt": "",
+      "account_status_db": "Active",
+      "account_status": "Active",
+      "account_status_lic": "Active",
+      "account_nr": "850052444",
+      "account_name": "Damme Ievis",
+      "account_primary_addr_id": "1-2SEO0S",
+      "full_addr": "Gauja 1 - 9, LV-1111",
+      "adress_zip_code": "LV-1111",
+      "address_city": "",
+      "address_country": "Lithuania",
+      "attention_of": "",
+      "care_of": "",
+      "street_address": "Gauja",
+      "addr_num": "1",
+      "street_letter": "",
+      "appart_number": "9"
+   },
+   {
+      "id": "1-2TIZIT",
+      "master_id": "1-AJJZE",
+      "account_class_lic": "Billing",
+      "secret_cust_acc": "N",
+      "account_class": "Billing",
+      "account_source": "Singl.eView",
+      "account_type": "Residential",
+      "account_sub_type_lic": "Residential",
+      "treatment_start_dt": "",
+      "account_status_db": "Active",
+      "account_status": "Active",
+      "account_status_lic": "Active",
+      "account_nr": "850143285",
+      "account_name": "Damme Ievis",
+      "account_primary_addr_id": "1-1XBDN",
+      "full_addr": "Brivibai 13, Vilnius, test, test, Kanaada, LT-1234",
+      "adress_zip_code": "LT-1234",
+      "address_city": "Vilnius",
+      "address_country": "Lebanon",
+      "attention_of": "",
+      "care_of": "",
+      "street_address": "Brivibai",
+      "addr_num": "13",
+      "street_letter": "a",
+      "appart_number": ""
+   }
+]

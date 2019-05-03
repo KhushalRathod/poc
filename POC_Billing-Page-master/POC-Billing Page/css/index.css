@@ -16,6 +16,9 @@ body {
     max-height: 7vh;
     width: 100%;
     margin-bottom: 12px;
+    line-height: 11px;
+    height: 55px;
+    margin-top: 10px;
 }
 
 #left .navbar {
@@ -29,6 +32,11 @@ body {
     padding: 0 43px 0px 49px;
     /* margin-top: 30px; */
     margin-left: 20px;
+    height: 110px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 /* Previous button  */
@@ -533,22 +541,25 @@ table {
     height: 86px;
     margin: 0 auto;
     padding-left: 0px;
-  }
-  .chart li {
+}
+
+.chart li {
     position: relative;
     display: table-cell;
     vertical-align: bottom;
     height: 86px;
-  }
-  .chart span {
+}
+
+.chart span {
     margin: 0 1em;
     display: block;
     background: #06a0fd;
     animation: draw 1s ease-in-out;
     margin-left: 0px;
     margin-right: 0px;
-  }
-  .chart span:before {
+}
+
+.chart span:before {
     position: absolute;
     left: 0;
     right: 0;
@@ -558,9 +569,9 @@ table {
     text-align: center;
     content: attr(title);
     word-wrap: break-word;
-  }
-  
-  #timeline .yellow-rounded {
+}
+
+#timeline .yellow-rounded {
     background: #fff9d3;
     border: 1px solid #fff9d3;
     border-radius: 25px;
@@ -630,4 +641,213 @@ table {
     margin: 0;
     cursor: pointer;
     border-radius: 50%;
-  }
+}
+
+#one {
+    padding: 0px;
+}
+
+#two {
+    padding-top: 8px;
+    height: 32px;
+    color: white
+}
+
+#three {
+    margin-left: 0px;
+}
+
+#four {
+    font-size: 12px;
+    color: #06a0fd;
+}
+
+#five {
+    color: white
+}
+
+#six {
+    color: #06a0fd
+}
+
+#seven {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    border-top-width: 0px;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-left: 5px;
+    padding-right: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#seven #eight {
+    font-size: 20px;
+}
+
+#nine {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    border-top-width: 0px;
+    margin-top: 5px;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+#ten {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    border-top-width: 0px;
+    margin-top: 5px;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+#ten #eleven {
+    color: #22b719;
+    font-size: 30px;
+}
+
+#ten #twelve {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    font-size: 12px;
+    padding: 0px 5px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+
+#seven #thirteen {
+    color: white;
+}
+
+#fourteen {
+    padding-right: 0px;
+}
+
+#fifteen {
+    margin-top: 0px;
+}
+
+#sixteen {
+    width: 22px;
+    padding: 2px;
+    margin-left: 10px;
+    border: 2px solid yellowgreen;
+}
+
+#seventeen {
+    margin-top: 6px;
+}
+
+#eighteen {
+    width: 22px;
+    padding: 2px;
+    margin-left: 10px;
+    border: 2px solid yellowgreen;
+}
+
+#nineteen {
+    background-color: #cccccc;
+    margin: 0px 0px;
+    height: 25px;
+}
+
+#twenty {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    color: #06a0fd;
+}
+
+#twentyone {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 25px;
+    width: 150px;
+}
+
+#twentytwo {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    padding-bottom: 1px;
+    height: 25px;
+    padding-top: 1px;
+    border-left-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: white;
+    color: orange;
+}
+
+#twentythree {
+    font-style: 12px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    height: 25px;
+    width: 120px;
+}
+
+#twentyfour {
+    width: 11.666667%;
+}
+
+#twentyfive {
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+#twentysix {
+    padding: 0;
+    margin: 0;
+    background-color: #cccccc;
+    border: none;
+}
+
+#twentyseven {
+    margin-top: 20px;
+}
+
+#twentyeight {
+    padding-left: 21px;
+    padding-right: 10px;
+}
+
+#twentynine {
+    font-size: 10px;
+    border: none;
+    background: none;
+}
+
+#thirty {
+    font-size: 40px;
+}
+
+#thirtyone {}
+
+#thirtytwo {}
+
+#thirtythree {}
+
+#thirtyfour {}
+
+#thirtyfive {}
+
+#thirtysix {}
+
+#thirtyseven {}
+
+#thirtyeight {}

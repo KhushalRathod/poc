@@ -64,3 +64,15 @@ app.controller('myController',
 
             });
     });
+
+
+    $(document).ready(function () {
+        $("#myTable td").click(function () {
+    
+            var column_num = parseInt($(this).index()) + 1;
+            var row_num = parseInt($(this).parent().index()) + 1;
+    
+            $("#result").html("Row_num =" + row_num + "  ,  Rolumn_num =" + column_num);
+        });
+    });
+    

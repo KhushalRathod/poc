@@ -11,17 +11,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
 </head>
 
-<body>
+<body ng-app="myApp">
 
-    <div class="col-xs-4">
-        <div class="row">
-            <div class="col-xs-12">
-            </div>
-        </div>
+    <div class="col-md-12">
+        {{WebtesfjhdvshlafvhSVGHVlvsglbvlbht.id}}
     </div>
+
+    <script>
+        var myApp = angular.module('myApp', []);
+        myApp.controller('myCtrl', function ($scope, webtest) {
+            webtest.fetch().then(function (data) {
+                $scope.accounttype = data;
+            })
+        });
+
+        myApp.factory('webtest', function ($q, $timeout, $http) {
+            var webtest = {
+                fetch: function (callback) {
+                    return $timeout(function () {
+                        return $http.get('rest_entities_accounts_read.json')
+                            .then(function (response) {
+                                return response.data;
+                            });
+                    }, 30);
+                }
+            };
+            return webtest;
+        }); 
+    </script>
 
 </body>
 

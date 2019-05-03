@@ -5,6 +5,7 @@
 
     <title>Index</title>
     <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylsheet" href="css/id_index.css"> -->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,15 +17,14 @@
 
 </head>
 
-<body>
+<body ng-app="app">
     <div class="container-fluid">
         <div class="row">
 
             <div class="col-md-4" id="left">
 
-                <div class="col-md-12" style="padding:0px;">
-                    <nav class="navbar navbar-inverse" id="topnav"
-                        style="line-height: 11px;height: 55px;margin-top: 10px;">
+                <div class="col-md-12" id="one" ng-controller="account">
+                    <nav class="navbar navbar-inverse" id="topnav">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
@@ -33,50 +33,40 @@
                             </button>
                             <div class="col-md-12">
                                 <div class="row">
-                                    <b><a class="navbar-brand" href="#"
-                                            style="padding-top:8px;height:32px;color:white">WebSiteName</a></b>
+                                    <b><a class="navbar-brand" id="two">{{account.account_name}}</a></b>
                                 </div>
-                                <div class="row" style="margin-left: 0px;">
-                                    <span style="font-size:12px; color:#06a0fd;"> Customer - </span><span
-                                        style="color:white">1234567890</span><span class="caret"
-                                        style="color:#06a0fd"></span>
+                                <div class="row" id="three">
+                                    <span id="four"> Customer - </span>
+                                    <span id="five">{{account.account_nr}}</span>
+                                    <span class="caret" id="six"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a href="#"
-                                        style="padding-top: 10px;padding-bottom: 0px;border-top-width: 0px;margin-top: 5px;padding-left: 10px;margin-left: 5px;padding-right: 10px;margin-right: 5px;">
-                                        <span class="glyphicon glyphicon-home blue-text"
-                                            style="font-size:20px;"></span></a>
+                                    <a href="#" id="seven">
+                                        <span class="glyphicon glyphicon-home blue-text" id="eight"></span></a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        style="padding-top: 10px;padding-bottom: 0px;border-top-width: 0px;margin-top: 5px;padding-left: 10px;margin-left: 5px;padding-right: 10px;margin-right: 5px;">
-                                        <span class="glyphicon glyphicon-ok-sign blue-text"
-                                            style="font-size:20px;"></span></a>
+                                    <a href="#" id="seven">
+                                        <span class="glyphicon glyphicon-ok-sign blue-text" id="eight"></span></a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        style="padding-top: 10px;padding-bottom: 0px;border-top-width: 0px;margin-top: 5px;padding-left: 10px;margin-left: 5px;padding-right: 10px;margin-right: 5px;">
-                                        <span class="glyphicon glyphicon-thumbs-up blue-text"
-                                            style="font-size:20px;"></span></a>
+                                    <a href="#" id="seven">
+                                        <span class="glyphicon glyphicon-thumbs-up blue-text" id="eight"></span></a>
                                 </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#"
-                                        style="padding-top: 10px;padding-bottom: 0px;border-top-width: 0px;margin-top: 5px;padding-left: 0px;margin-left: 0px;padding-right: 0px;margin-right: 0px;"><span
-                                            class="glyphicon glyphicon-bell"
-                                            style="color:#22b719;font-size: 30px;"></span>
-                                        <span
-                                            style="position: absolute;top: 11px;right: 15px;font-size: 12px;padding: 0px 5px;border-radius: 50%;background-color: white;color: black;">5</span>
+                                <li><a href="#" id="ten">
+                                        <span class="glyphicon glyphicon-bell" id="eleven"></span>
+                                        <span id="twelve">5</span>
                                     </a>
                                 </li>
                                 <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                                        style="padding-top: 10px;padding-bottom: 0px;border-top-width: 0px;margin-top: 5px;padding-left: 10px;margin-left: 5px;padding-right: 10px;margin-right: 5px;"><span
-                                            class="glyphicon glyphicon-menu-hamburger" style="color:white"></span></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="seven">
+                                        <span class="glyphicon glyphicon-menu-hamburger" id="thirteen"></span>
+                                    </a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">Page 1-1</a></li>
                                         <li><a href="#">Page 1-2</a></li>
@@ -86,58 +76,56 @@
                             </ul>
                         </div>
                     </nav>
-                    <div class="col-md-6" style="padding-right: 0px;">
-                        <label>SSN:</label>010191-123456
-                        <div class="media" style="margin-top:0px;">
+                    <div class="col-md-6" id="fourteen">
+                        <label>SSN:</label> {{account.ssn_nr}}
+                        <div class="media" id="fifteen">
                             <div class="media-left">
                                 <label> Contact: </label>
-                                <img src="images/index_contact.png" class="media-object"
-                                    style="width:22px;padding:2px;margin-left: 10px;border: 2px solid yellowgreen">
+                                <img src="images/index_contact.png" class="media-object" id="sixteen">
                             </div>
                             <div class="media-body">
-                                John Doe<br> +123456789876 jod@example.com
+                                {{account.primary_contact_full_name}}<br> +{{account.primary_phone_nr}}
+                                {{account.email_address}}
                             </div>
                         </div>
-                        <div class="media" style="margin-top:6px;">
+                        <div class="media" id="seventeen">
                             <div class="media-left">
                                 <label> Address: </label>
-                                <img src="images/index_location.png" class="media-object"
-                                    style="width:22px;padding:2px;margin-left: 10px;border: 2px solid yellowgreen">
+                                <img src="images/index_location.png" class="media-object" id="eighteen">
                             </div>
                             <div class="media-body">
-                                Sqwert_AWERTY12<br> Pjnsxuittiu10928 <br> Lv-1029
+                                {{account.full_addr}}<br>{{account.primary_address_country}}<br>{{account.primary_adress_zip_code}}
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <label>Segment: </label> Develop
+                        <label>Segment: </label> {{account.primary_postpaid_segment}}
                         <br>
-                        <label>Customer Since: </label> 2014-09-16
+                        <label>Customer Since: </label> {{account.customer_since}}
                     </div>
                 </div>
                 <!--Assets-->
-                <div class="col-md-12" id="assetsnav">
-                    <div class="row" id="commonnav" style="background-color: #cccccc;margin: 0px 0px;height: 25px;">
+                <div class="col-md-12" id="assetsnav" ng-controller="assets">
+                    <div class="row" id="nineteen">
                         <div class="col-xs-6">
-                            <p style="font-size: 17px;font-weight: bold;margin: 0;color: #06a0fd;">Assets</p>
+                            <p id="twenty">Assets</p>
                         </div>
-                        <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;height: 25px;width: 150px;">
+                        <div class="col-md-4" id="twentyone">
                             <form>
                                 <div class="input-group">
-                                    <span class="input-group-addon"
-                                        style="border-top-width: 0px;border-bottom-width: 0px;padding-bottom: 1px;height: 25px;padding-top: 1px;border-left-width: 0px;padding-left: 0px;padding-right: 0px;background-color: white;color: orange;"><i
-                                            class="glyphicon glyphicon-search"></i></span>
-                                    <input id="search1" type="text"
-                                        style="font-style:12px;padding-bottom: 0px;padding-top: 0px;padding-right: 0px;padding-left: 0px;border-left-width: 0px;border-top-width: 0px;border-right-width: 0px;border-bottom-width: 0px;height: 25px;width: 120px;"
-                                        class="form-control" name="assetssearch" placeholder="Look for...">
+                                    <span class="input-group-addon" id="twentytwo">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </span>
+                                    <input type="text" id="twentythree" class="form-control" name="assetssearch"
+                                        placeholder="Look for...">
                                 </div>
                             </form>
                         </div>
-                        <div class="col-md-2" style="width: 11.666667%;">
-                            <div class="dropdown" style="margin-left: 20px;margin-top: 1px;">
+                        <div class="col-md-2" id="twentyfour">
+                            <div class="dropdown" id="twentyfive">
                                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
-                                    style="padding: 0;margin: 0;background-color: #cccccc;border: none;">
+                                    id="twentysix">
                                     <i class="fa fa-bars"></i></button>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">HTML</a></li>
@@ -147,40 +135,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel slide media-carousel" id="media"
-                        style="height: 110px;margin-left: 12px;margin-right: 12px;padding-left: 25px;padding-right: 25px;">
+                    <div class="carousel slide media-carousel" id="media">
                         <div class="carousel-inner">
                             <div class="item  active">
-                                <div class="row" style="margin-top: 20px;">
-                                    <div class="col-md-3" style="padding-left: 21px;padding-right: 10px;">
-                                        <button style="font-size: 10px;border: none;background: none;"><i
-                                                class="fa fa-mobile" style="font-size: 40px;"><i
-                                                    class="fa fa-check-circle"
-                                                    style="font-size: 12px;color: green;position: absolute;top: 0px;right: 20px;"></i></i><br>Mobile
+                                <div class="row" id="twentyseven">
+                                    <div class="col-md-3" id="twentyeight">
+                                        <button id="twentynine">
+                                            <i class="fa fa-mobile" id="thirty">
+                                                <i class="fa fa-check-circle" id="thirtyone">
+                                                </i>
+                                            </i><br>Mobile
                                             voice<br>Services<br>321654987</button>
                                     </div>
                                     <div class="col-md-3" style="padding-left: 10px;padding-right: 10px;">
-                                        <button
-                                            style="font-size: 10px;border: none;background: none;padding-left: 4px;padding-right: 4px;width: 80px;"><i
-                                                class="fas fa-puzzle-piece" style="font-size: 40px;"><i
-                                                    class="fa fa-check-circle"
-                                                    style="font-size: 12px;color: green;position: absolute;top: 0px;right: 20px;"></i></i><br>Account
+                                        <button id="twentynine"><i class="fas fa-puzzle-piece" id="thirty"><i
+                                                    class="fa fa-check-circle" id="thirtyone"></i></i><br>Account
                                             level
                                             <br>invoice discount</button>
                                     </div>
                                     <div class="col-md-3" style="padding-left: 10px;padding-right: 10px;">
-                                        <button style="font-size: 10px;border: none;background: none;"><i
-                                                class="fa fa-mobile" style="font-size: 40px;"><i
-                                                    class="fa fa-check-circle"
-                                                    style="font-size: 12px;color: green;position: absolute;top: 0px;right: 20px;"></i></i><br>Mobile
+                                        <button id="twentynine"><i class="fa fa-mobile" id="thirty"><i
+                                                    class="fa fa-check-circle" id="thirtyone"></i></i><br>Mobile
                                             fixed
                                             services</button>
                                     </div>
                                     <div class="col-md-3" style="padding-left: 10px;padding-right: 10px;">
-                                        <button style="font-size: 10px;border: none;background: none;"><i
-                                                class="fa fa-mobile" style="font-size: 40px;"><i
-                                                    class="fa fa-check-circle"
-                                                    style="font-size: 12px;color: green;position: absolute;top: 0px;right: 20px;"></i></i><br>Mobile
+                                        <button id="twentynine"><i class="fa fa-mobile" id="thirty"><i
+                                                    class="fa fa-check-circle" id="thirtyone"></i></i><br>Mobile
                                             voice<br>Services<br>321654987</button>
                                     </div>
                                 </div>
@@ -188,24 +169,18 @@
                             <div class="item">
                                 <div class="row" style="margin-top: 20px;">
                                     <div class="col-md-3" style="padding-left: 15px;padding-right: 10px;">
-                                        <button style="font-size: 10px;border: none;background: none;"><i
-                                                class="fa fa-mobile" style="font-size: 40px;"><i
-                                                    class="fa fa-check-circle"
-                                                    style="font-size: 12px;color: green;position: absolute;top: 0px;right: 20px;"></i></i><br>Mobile
+                                        <button id="twentynine"><i class="fa fa-mobile" id="thirty"><i
+                                                    class="fa fa-check-circle" id="thirtyone"></i></i><br>Mobile
                                             voice Services<br>321654987</button>
                                     </div>
                                     <div class="col-md-3" style="padding-left: 15px;padding-right: 10px;">
-                                        <button style="font-size: 10px;border: none;background: none;"><i
-                                                class="fa fa-mobile" style="font-size: 40px;"><i
-                                                    class="fa fa-check-circle"
-                                                    style="font-size: 12px;color: green;position: absolute;top: 0px;right: 20px;"></i></i><br>Mobile
+                                        <button id="twentynine"><i class="fa fa-mobile" id="thirty"><i
+                                                    class="fa fa-check-circle" id="thirtyone"></i></i><br>Mobile
                                             voice Services<br>321654987</button>
                                     </div>
                                     <div class="col-md-3" style="padding-left: 15px;padding-right: 10px;">
-                                        <button style="font-size: 10px;border: none;background: none;"><i
-                                                class="fa fa-mobile" style="font-size: 40px;"><i
-                                                    class="fa fa-check-circle"
-                                                    style="font-size: 12px;color: green;position: absolute;top: 0px;right: 20px;"></i></i><br>Mobile
+                                        <button id="twentynine"><i class="fa fa-mobile" id="thirty"><i
+                                                    class="fa fa-check-circle" id="thirtyone"></i></i><br>Mobile
                                             voice Services<br>321654987</button>
                                     </div>
                                     <div class="col-md-3" style="padding-left: 15px;padding-right: 10px;">
@@ -228,22 +203,21 @@
                         <div class="col-md-6">
                             <p style="font-size: 17px;font-weight: bold;margin: 0;color: #06a0fd;">Order</p>
                         </div>
-                        <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;height: 25px;width: 150px;">
+                        <div class="col-md-4" id="twentyone">
                             <form>
                                 <div class="input-group">
-                                    <span class="input-group-addon"
-                                        style="border-top-width: 0px;border-bottom-width: 0px;padding-bottom: 1px;height: 25px;padding-top: 1px;border-left-width: 0px;padding-left: 0px;padding-right: 0px;background-color: white;color: orange;"><i
-                                            class="glyphicon glyphicon-search"></i></span>
-                                    <input id="search2" type="text"
-                                        style="font-style:12px;padding-bottom: 0px;padding-top: 0px;padding-right: 0px;padding-left: 0px;border-left-width: 0px;border-top-width: 0px;border-right-width: 0px;border-bottom-width: 0px;height: 25px;width: 120px;"
-                                        class="form-control" name="assetssearch" placeholder="Look for...">
+                                    <span class="input-group-addon" id="twentytwo">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </span>
+                                    <input type="text" id="twentythree" class="form-control" name="assetssearch"
+                                        placeholder="Look for...">
                                 </div>
                             </form>
                         </div>
-                        <div class="col-md-2" style="width: 11.666667%;">
-                            <div class="dropdown" style="margin-left: 20px;margin-top: 1px;">
+                        <div class="col-md-2" id="twentyfour">
+                            <div class="dropdown" id="twentyfive">
                                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
-                                    style="padding: 0;margin: 0;background-color: #cccccc;border: none;">
+                                    id="twentysix">
                                     <i class="fa fa-bars"></i></button>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">HTML</a></li>
@@ -348,28 +322,26 @@
                         <div class="col-md-6">
                             <p style="font-size: 17px;font-weight: bold;margin: 0;color: #06a0fd;">Invoices</p>
                         </div>
-                        <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;height: 25px;width: 150px;">
+                        <div class="col-md-4" id="twentyone">
                             <form>
                                 <div class="input-group">
-                                    <span class="input-group-addon"
-                                        style="border-top-width: 0px;border-bottom-width: 0px;padding-bottom: 1px;height: 25px;padding-top: 1px;border-left-width: 0px;padding-left: 0px;padding-right: 0px;background-color: white;color: orange;"><i
-                                            class="glyphicon glyphicon-search"></i></span>
-                                    <input id="search3" type="text"
-                                        style="font-style:12px;padding-bottom: 0px;padding-top: 0px;padding-right: 0px;padding-left: 0px;border-left-width: 0px;border-top-width: 0px;border-right-width: 0px;border-bottom-width: 0px;height: 25px;width: 120px;"
-                                        class="form-control" name="assetssearch" placeholder="Look for...">
+                                    <span class="input-group-addon" id="twentytwo">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </span>
+                                    <input type="text" id="twentythree" class="form-control" name="assetssearch"
+                                        placeholder="Look for...">
                                 </div>
                             </form>
                         </div>
-                        <div class="col-md-2" style="width: 11.666667%;">
-                            <div class="dropdown" style="margin-left: 20px;margin-top: 1px;">
+                        <div class="col-md-2" id="twentyfour">
+                            <div class="dropdown" id="twentyfive">
                                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
-                                    style="padding: 0;margin: 0;background-color: #cccccc;border: none;">
+                                    id="twentysix">
                                     <i class="fa fa-bars"></i></button>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">HTML</a></li>
                                     <li><a href="#">CSS</a></li>
                                     <li><a href="#">JavaScript</a></li>
-
                                 </ul>
                             </div>
                         </div>
@@ -540,7 +512,7 @@
                     </div>
                 </div>
 
-                <div class="container-fluid" ng-app="app" id="timeline">
+                <div class="container-fluid" id="timeline">
                     <div class="row">
                         <div class="col-md-12" id="style-4" style="padding:15px;">
                             <div class="row" ng-controller="HelloWorldCtrl">
@@ -744,10 +716,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/accounts.js"></script>
+    <!-- <script src="js/accounts.js"></script>
     <script src="js/assets.js"></script>
     <script src="js/invoices.js"></script>
-    <script src="js/order.js"></script>
+    <script src="js/order.js"></script> -->
 
 </body>
 
