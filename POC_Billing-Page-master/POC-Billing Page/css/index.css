@@ -37,6 +37,11 @@ body {
     margin-right: 12px;
     padding-left: 25px;
     padding-right: 25px;
+    height: 110px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 /* Previous button  */
@@ -675,10 +680,10 @@ table {
     padding-bottom: 0px;
     border-top-width: 0px;
     margin-top: 5px;
-    padding-left: 10px;
-    margin-left: 5px;
-    padding-right: 10px;
-    margin-right: 5px;
+    padding-left: 0px;
+    margin-left: 7px;
+    padding-right: 0px;
+    margin-right: 7px;
     font-size: 20px;
 }
 
@@ -836,18 +841,490 @@ table {
     font-size: 40px;
 }
 
-#thirtyone {}
+#thirtyone {
+    font-size: 12px;
+    color: green;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
 
-#thirtytwo {}
+#thirtytwo {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
-#thirtythree {}
+#thirtythree {
+    color: #333;
+    margin-top: 40px;
+}
 
-#thirtyfour {}
+#thirtyfour {
+    background-color: #cccccc;
+    margin: 0px 0px;
+    height: 25px;
+}
 
-#thirtyfive {}
+#thirtyfive {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    color: #06a0fd;
+}
 
-#thirtysix {}
+#thirtysix {
+    padding-top: 10px;
+    padding-left: 0px;
+}
 
-#thirtyseven {}
+#thirtyseven {
+    border-collapse: collapse;
+    border-color: white;
+}
 
-#thirtyeight {}
+#thirtyeight {
+    height: 25px;
+    text-align: center;
+    width: 88px;
+}
+
+#thirtynine {
+    height: 25px;
+    text-align: center;
+    width: 89px;
+}
+
+#forty {
+    height: 25px;
+    text-align: center;
+}
+
+#fortyone {
+    background-color: #cccccc;
+    margin: 0px 0px;
+    height: 25px;
+}
+
+#fortytwo {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    color: #06a0fd;
+}
+
+#fortythree {
+    margin-top: 20px;
+}
+
+#fortyfour {
+    padding-left: 21px;
+    padding-right: 10px;
+}
+
+#fortyfive {
+    font-size: 10px;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+#fortysix {
+    font-size: 12px;
+    color: orange;
+    position: absolute;
+    right: 0px;
+}
+
+#fortyseven {
+    padding-left: 13px;
+    padding-right: 10px;
+}
+
+#fortyeight {
+    font-size: 12px;
+    color: green;
+    position: absolute;
+    right: -5px;
+    top: 6px;
+}
+
+#fortynine {
+    font-size: 12px;
+    color: orange;
+    position: absolute;
+    right: -5px;
+    top: 6px;
+}
+
+#fifty {
+    margin-top: 20px;
+}
+
+#fiftyone {
+    padding-left: 21px;
+    padding-right: 10px;
+}
+
+#fiftytwo {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+#fiftythree {
+    color: #333;
+    margin-top: 40px;
+}
+
+#fiftyfour {
+    color: #06a0fd;
+    margin-left: -15px;
+}
+
+#fiftyfive {
+    color: white;
+    text-align: center;
+}
+
+#fiftysix {
+    background-color: #C6E5B7;
+    height: 60px;
+}
+
+#fiftyseven {
+    list-style-type: none;
+    margin-left: -41px;
+    margin-top: -5px;
+}
+
+#fiftyeight {
+    font-size: 12px;
+    content: ' \003E';
+}
+
+#fiftynine {
+    color: #06a0fd;
+}
+
+#sixty {
+    padding-right: 0px;
+}
+
+#sixty #sixtyone {
+    padding: 0;
+}
+
+#sixtytwo {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#sixtythree {
+    margin-bottom: 100px;
+}
+
+#sixtyfour {
+    margin: auto;
+}
+
+#sixtyfive {
+    color: #a1a1a1;
+}
+
+#sixtysix {
+    display: inline;
+    padding: 0;
+}
+
+#sixtyseven {
+    background-color: lightgreen;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#sixtyeight {
+    font-size: 15px;
+    color: #8836f3;
+    font-weight: 600;
+}
+
+#sixtynine {
+    color: black;
+}
+
+#seventy {
+    color: #06a0fd;
+}
+
+#seventyone {
+    height: 65px;
+    width: 100%;
+}
+
+#seventytwo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 12px;
+    border: 0px;
+    background: none;
+}
+
+#seventythree {
+    color:#afaaaa;
+}
+
+#seventyfour {}
+
+#seventyfive {}
+
+#seventysix {}
+
+#seventyseven {}
+
+#seventyeight {}
+
+#seventynine {}
+
+#eighty {}
+
+#eightyone {}
+
+#eightytwo {}
+
+#eightythree {}
+
+#eightyfour {}
+
+#eightyfive {}
+
+#eightysix {}
+
+#eightyseven {}
+
+#eightyeight {}
+
+#eightynine {}
+
+#ninety {}
+
+#ninetyone {}
+
+#ninetytwo {}
+
+#ninetythree {}
+
+#ninetyfour {}
+
+#ninetyfive {}
+
+#ninetysix {}
+
+#ninetyseven {}
+
+#ninetyeight {}
+
+#ninetynine {}
+
+#onehundred {}
+
+#onehundredone {}
+
+#onehundredtwo {}
+
+#onehundredthree {}
+
+#onehundredfour {}
+
+#onehundredfive {}
+
+#onehundredsix {}
+
+#onehundredseven {}
+
+#onehundredeight {}
+
+#onehundrednine {}
+
+#onehundredten {}
+
+#onehundredeleven {}
+
+#onehundredtwelve {}
+
+#onehundredthirteen {}
+
+#onehundredfourteen {}
+
+#onehundredfifteen {}
+
+#onehundredsixteen {}
+
+#onehundredseventeen {}
+
+#onehundredeighteen {}
+
+#onehundrednineteen {}
+
+#onehundredtwenty {}
+
+#onehundredtwentyone {}
+
+#onehundredtwentytwo {}
+
+#onehundredtwentythree {}
+
+#onehundredtwentyfour {}
+
+#onehundredtwentyfive {}
+
+#onehundredtwentysix {}
+
+#onehundredtwentyseven {}
+
+#onehundredtwentyeight {}
+
+#onehundredtwentynine {}
+
+#onehundredthirty {}
+
+#onehundredthirtyone {}
+
+#onehundredthirtytwo {}
+
+#onehundredthirtythree {}
+
+#onehundredthirtyfour {}
+
+#onehundredthirtyfive {}
+
+#onehundredthirtysix {}
+
+#onehundredthirtyseven {}
+
+#onehundredthirtyeight {}
+
+#onehundredthirtynine {}
+
+#onehundredforty {}
+
+#onehundredfortyone {}
+
+#onehundredfortytwo {}
+
+#onehundredfortythree {}
+
+#onehundredfortyfour {}
+
+#onehundredfortyfive {}
+
+#onehundredfortysix {}
+
+#onehundredfortyseven {}
+
+#onehundredfortyeight {}
+
+#onehundredfortynine {}
+
+#onehundredfifty {}
+
+#onehundredfiftyone {}
+
+#onehundredfiftytwo {}
+
+#onehundredfiftythree {}
+
+#onehundredfiftyfour {}
+
+#onehundredfiftyfive {}
+
+#onehundredfiftysix {}
+
+#onehundredfiftyseven {}
+
+#onehundredfiftyeight {}
+
+#onehundredfiftynine {}
+
+#onehundredsixty {}
+
+#onehundredsixtyone {}
+
+#onehundredsixtytwo {}
+
+#onehundredsixtythree {}
+
+#onehundredsixtyfour {}
+
+#onehundredsixtyfive {}
+
+#onehundredsixtysix {}
+
+#onehundredsixtyseven {}
+
+#onehundredsixtyeight {}
+
+#onehundredsixtynine {}
+
+#onehundredseventy {}
+
+#onehundredseventyone {}
+
+#onehundredseventytwo {}
+
+#onehundredseventythree {}
+
+#onehundredseventyfour {}
+
+#onehundredseventyfive {}
+
+#onehundredseventysix {}
+
+#onehundredseventyseven {}
+
+#onehundredseventyeight {}
+
+#onehundredseventynine {}
+
+#onehundredeighty {}
+
+#onehundredeightyone {}
+
+#onehundredeightytwo {}
+
+#onehundredeightythree {}
+
+#onehundredeightyfour {}
+
+#onehundredeightyfive {}
+
+#onehundredeightysix {}
+
+#onehundredeightyseven {}
+
+#onehundredeightyeight {}
+
+#onehundredeightynine {}
+
+#onehundredninety {}
+
+#onehundredninetyone {}
+
+#onehundredninetytwo {}
+
+#onehundredninetythree {}
+
+#onehundredninetyfour {}
+
+#onehundredninetyfive {}
+
+#onehundredninetysix {}
+
+#onehundredninetyseven {}
+
+#onehundredninetyeight {}
+
+#onehundredninetynine {}
+
+#twohundred {}
