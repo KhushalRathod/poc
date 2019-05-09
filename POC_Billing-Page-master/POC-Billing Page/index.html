@@ -96,7 +96,7 @@
                                 <img src="images/index_location.png" class="media-object" id="eighteen">
                             </div>
                             <div class="media-body">
-                                {{account.full_addr}}<br>{{account.primary_address_country}}<br>{{account.primary_adress_zip_code}}
+                                {{account.primary_street_address}},{{account.primary_street_nr}},{{account.primary_street_letter}},{{account.primary_address_city}}<br>{{account.primary_address_country}}<br>{{account.primary_adress_zip_code}}
                             </div>
                         </div>
                     </div>
@@ -143,72 +143,25 @@
                         <div class="carousel-inner">
                             <div class="item  active">
                                 <div class="row" id="twentyseven">
-                                    <div class="col-md-3" id="twentyeight">
+                                    <div class="col-md-3" id="twentyeight" ng-repeat="data in assets">
                                         <button id="twentynine">
                                             <i class="fa fa-mobile" id="thirty">
                                                 <i class="fa fa-check-circle" id="thirtyone"></i>
                                             </i>
-                                            <br>Mobilevoice<br>Services<br>321654987
+                                            <br>{{data.product_name}}
                                         </button>
                                     </div>
-                                    <div class="col-md-3" id="thirtytwo">
-                                        <button id="twentynine">
-                                            <i class="fas fa-puzzle-piece" id="thirty">
-                                                <i class="fa fa-check-circle" id="thirtyone"></i>
-                                            </i>
-                                            <br>Account level<br>invoice discount
-                                        </button>
-                                    </div>
-                                    <div class="col-md-3" id="thirtytwo">
-                                        <button id="twentynine">
-                                            <i class="fa fa-mobile" id="thirty">
-                                                <i class="fa fa-check-circle" id="thirtyone"></i>
-                                            </i>
-                                            <br>Mobile fixed services
-                                        </button>
-                                    </div>
-                                    <div class="col-md-3" id="thirtytwo">
-                                        <button id="twentynine">
-                                            <i class="fa fa-mobile" id="thirty">
-                                                <i class="fa fa-check-circle" id="thirtyone"></i>
-                                            </i>
-                                            <br>Mobile fixed services
-                                        </button>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="row" id="twentyseven">
-                                    <div class="col-md-3" id="twentyeight">
+                                    <div class="col-md-3" id="twentyeight" ng-repeat="data in assets">
                                         <button id="twentynine">
                                             <i class="fa fa-mobile" id="thirty">
                                                 <i class="fa fa-check-circle" id="thirtyone"></i>
                                             </i>
-                                            <br>Mobilevoice<br>Services<br>321654987
-                                        </button>
-                                    </div>
-                                    <div class="col-md-3" id="thirtytwo">
-                                        <button id="twentynine">
-                                            <i class="fas fa-puzzle-piece" id="thirty">
-                                                <i class="fa fa-check-circle" id="thirtyone"></i>
-                                            </i>
-                                            <br>Account level<br>invoice discount
-                                        </button>
-                                    </div>
-                                    <div class="col-md-3" id="thirtytwo">
-                                        <button id="twentynine">
-                                            <i class="fa fa-mobile" id="thirty">
-                                                <i class="fa fa-check-circle" id="thirtyone"></i>
-                                            </i>
-                                            <br>Mobile fixed services
-                                        </button>
-                                    </div>
-                                    <div class="col-md-3" id="thirtytwo">
-                                        <button id="twentynine">
-                                            <i class="fa fa-mobile" id="thirty">
-                                                <i class="fa fa-check-circle" id="thirtyone"></i>
-                                            </i>
-                                            <br>Mobile fixed services
+                                            <br>{{data.product_name}}
                                         </button>
                                     </div>
                                 </div>
@@ -220,11 +173,11 @@
                 </div>
                 <!--end of assets-->
 
-                <!--Order-->
-                <div class="col-md-12" id="ordernav">
+                <!--Orders-->
+                <div class="col-md-12" id="ordernav" ng-controller="orders">
                     <div class="row" id="thirtyfour">
                         <div class="col-md-6">
-                            <p id="thirtyfive">Order</p>
+                            <p id="thirtyfive">Orders</p>
                         </div>
                         <div class="col-md-4" id="twentyone">
                             <form>
@@ -264,84 +217,21 @@
                             </thead>
                             <!--1st ROW-->
                             <tbody id="style-3">
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
-                                </tr>
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
-                                </tr>
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
-                                </tr>
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
-                                </tr>
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
-                                </tr>
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
-                                </tr>
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
-                                </tr>
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
-                                </tr>
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
-                                </tr>
-                                <tr>
-                                    <td>2018-08-13</td>
-                                    <td>Sales Order</td>
-                                    <td>Complete</td>
-                                    <td>10020000283</td>
-                                    <td>1-330221244</td>
+                                <tr ng-repeat="info in orders">
+                                    <td>{{info.order_date}}</td>
+                                    <td>{{info.order_type}}</td>
+                                    <td>{{info.status}}</td>
+                                    <td>{{info.ca_nr}}</td>
+                                    <td>{{info.order_number}}</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <!--end of order-->
+                <!--end of orders-->
 
                 <!--Invoice-->
-                <div class="col-md-12" id="invoicenav">
+                <div class="col-md-12" id="invoicenav" ng-controller="invoices">
                     <div class="row" id="fortyone">
                         <div class="col-md-6">
                             <p id="fortytwo">Invoices</p>
@@ -374,102 +264,27 @@
                         <div class="carousel-inner">
                             <div class="item  active">
                                 <div class="row" id="fortythree">
-                                    <div class="col-md-3" id="fortyfour">
+                                    <div class="col-md-3" id="fortyfour" ng-repeat="data in invoices">
+                                        <p id="seventyfive">
+                                            December.'13</p>
                                         <button id="fortyfive">
-                                            <ul class="chart">
-                                                <li>
-                                                    November.'13
-                                                    <span style="height:50%;">
-                                                        <i class="far fa-clock" id="fortysix"></i>
-                                                        <label style="color:white;">
-                                                            Due Date<br />2019-04-15<br />0&euro;
-                                                        </label>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                            321654987
+                                            <img src="images/file1.png" id="seventysix">
+                                            <p id="seventyfour">204 Kr</p>
                                         </button>
-                                    </div>
-                                    <div class="col-md-3" id="fortyseven">
-                                        <button id="fortyfive">
-                                            <ul class="chart">
-                                                <li>
-                                                    December.'13
-                                                    <span style="height:50%;">
-                                                        <i class="fa fa-check-circle" id="fortyeight"></i>
-                                                        <label style="color:white;">0&euro;</label>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                            321654987
-                                        </button>
-                                    </div>
-                                    <div class="col-md-3" id="">
-                                        <button id="fortyfive">
-                                            <ul class="chart">
-                                                <li>
-                                                    December.'13
-                                                    <span style="height:85%;">
-                                                        <i class="fa fa-check-circle" id="fortyeight"></i>
-                                                        <label style="color:white;">10&euro;</label>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                            321654987
-                                        </button>
-                                    </div>
-                                    <div class="col-md-3" id="">
-                                        <button id="fortyfive">
-                                            <ul class="chart">
-                                                <li>
-                                                    Next Invoice
-                                                    <span style="height:50%;">
-                                                        <i class="fa fa-cog" id="fortynine"></i>
-                                                        <label style="color:white;">Due
-                                                            Date<br />2019-04-15<br />0&euro;</label>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                            321654987
-                                        </button>
+                                        <p id="seventyseven">{{data.billing_account_nr}}</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="row" id="fifty">
-                                    <div class="col-md-3" id="fiftyone">
+                                    <div class="col-md-3" id="fortyfour" ng-repeat="data in invoices">
+                                        <p id="seventyfive">
+                                            December.'13</p>
                                         <button id="fortyfive">
-                                            <ul class="chart">
-                                                <li>
-                                                    December.'13
-                                                    <span style="height:50%;">
-                                                        <i class="fa fa-check-circle" id="fortyeight"></i>
-                                                        <label style="color:white;">0&euro;</label>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                            321654987
+                                            <img src="images/file1.png" id="seventysix">
+                                            <p id="seventyfour">204 Kr</p>
                                         </button>
-                                    </div>
-                                    <div class="col-md-3" id="">
-                                        <button id="fortyfive">
-                                            <ul class="chart">
-                                                <li>
-                                                    December.'13
-                                                    <span style="height:85%;">
-                                                        <i class="fa fa-check-circle" id="fortyeight"></i>
-                                                        <label style="color:white;">10&euro;</label>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                            321654987
-                                        </button>
-                                    </div>
-                                    <div class="col-md-3" id="fiftytwo">
-
-                                    </div>
-                                    <div class="col-md-3" id="fiftytwo">
-
+                                        <p id="seventyseven">{{data.billing_account_nr}}</p>
                                     </div>
                                 </div>
                             </div>

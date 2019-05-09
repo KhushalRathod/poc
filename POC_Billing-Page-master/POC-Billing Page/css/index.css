@@ -913,19 +913,23 @@ table {
 }
 
 #fortythree {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #fortyfour {
+    width: 24%;
     padding-left: 21px;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 #fortyfive {
     font-size: 10px;
-    border: none;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
     background: none;
     padding: 0;
+    height: 90px;
+    width: 71.5px;
 }
 
 #fortysix {
@@ -957,7 +961,7 @@ table {
 }
 
 #fifty {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #fiftyone {
@@ -972,7 +976,7 @@ table {
 
 #fiftythree {
     color: #333;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 #fiftyfour {
@@ -1072,16 +1076,40 @@ table {
 }
 
 #seventythree {
-    color:#afaaaa;
+    color: #afaaaa;
 }
 
-#seventyfour {}
+#seventyfour {
+    color: #a19c9c;
+    font-size: 11px;
+    padding: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
 
-#seventyfive {}
+#seventyfive {
+    color: #756e6e;
+    font-size: 12px;
+    padding: 0px;
+    text-align: -webkit-center;
+    margin-bottom: 5px;
+}
 
-#seventysix {}
+#seventysix {
+    width: 53px;
+    height: 64px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
 
-#seventyseven {}
+#seventyseven {
+    color: #756e6e;
+    font-size: 12px;
+    padding: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 5px;
+}
 
 #seventyeight {}
 
