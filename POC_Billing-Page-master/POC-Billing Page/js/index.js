@@ -1,4 +1,12 @@
-var app = angular.module('app', []);
+var app = angular.module('app', ['ngRoute']);
+
+app.config(
+    function($routeProvider){
+        $routeProvider.
+        when('/orders',{
+            templateUrl : 'order.html'
+        })
+    });
 
 app.controller("HelloWorldCtrl", function ($scope) {
     $scope.months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].reverse();
@@ -10,7 +18,7 @@ app.controller("HelloWorldCtrl", function ($scope) {
     // for(var i=1;i<=30;i++){
     //     var d = new Date("01/"+i+"/2019");
     //     $scope.dates.push(d);
-    // }
+    // }0
 
 
 
