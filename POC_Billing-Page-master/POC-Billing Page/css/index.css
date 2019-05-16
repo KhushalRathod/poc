@@ -491,7 +491,7 @@ th {
 
 .tableBodyScroll tbody {
     display: block;
-    max-height: 130px;
+    max-height: 155px;
     overflow-y: scroll;
 }
 
@@ -776,7 +776,6 @@ table {
     padding-left: 0px;
     padding-right: 0px;
     height: 25px;
-    width: 150px;
 }
 
 #twentytwo {
@@ -803,16 +802,14 @@ table {
     border-right-width: 0px;
     border-bottom-width: 0px;
     height: 25px;
-    width: 120px;
 }
 
-#twentyfour {
+/* #twentyfour {
     width: 11.666667%;
-}
+} */
 
 #twentyfive {
-    margin-left: 20px;
-    margin-top: 1px;
+    text-align: right;
 }
 
 #twentysix {
@@ -827,8 +824,9 @@ table {
 }
 
 #twentyeight {
-    padding-left: 21px;
+    padding-left: 20px;
     padding-right: 10px;
+    padding-bottom: 5px;
 }
 
 #twentynine {
@@ -845,7 +843,7 @@ table {
     font-size: 12px;
     color: green;
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 0px;
 }
 
@@ -885,13 +883,11 @@ table {
 #thirtyeight {
     height: 25px;
     text-align: center;
-    width: 88px;
 }
 
 #thirtynine {
     height: 25px;
     text-align: center;
-    width: 89px;
 }
 
 #forty {

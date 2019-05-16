@@ -47,7 +47,7 @@
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a href="#" id="seven">
+                                    <a href="#orders" id="seven">
                                         <span class="glyphicon glyphicon-home blue-text" id="eight"></span></a>
                                 </li>
                                 <li>
@@ -174,7 +174,7 @@
                 <!--end of assets-->
 
                 <!--Orders-->
-                <div class="col-md-12" id="ordernav" ng-controller="orders">
+                <div class="col-md-12" id="ordernav" ng-controller="orders" style="margin-top: 10px;">
                     <div class="row" id="thirtyfour">
                         <div class="col-md-6">
                             <p id="thirtyfive">Orders</p>
@@ -206,23 +206,22 @@
                     </div>
                     <div id="thirtysix">
                         <table class="tableBodyScroll" id="thirtyseven" border="1px">
-                            <thead>
-                                <tr>
+
+                            <!--1st ROW-->
+                            <tbody id="style-3">
+                                <tr id="myHeader">
                                     <th id="thirtyeight">Order Date</th>
                                     <th id="thirtyeight">Order Type</th>
                                     <th id="thirtynine">Status</th>
                                     <th id="thirtynine">Billing Account</th>
                                     <th id="forty">Order #</th>
                                 </tr>
-                            </thead>
-                            <!--1st ROW-->
-                            <tbody id="style-3">
                                 <tr ng-repeat="info in orders">
-                                    <td><a href="#orders">{{info.order_date}}</a></td>
-                                    <td><a href="#orders">{{info.order_type}}</a></td>
-                                    <td><a href="#orders">{{info.status}}</a></td>
-                                    <td><a href="#orders">{{info.ca_nr}}</a></td>
-                                    <td><a href="#orders">{{info.order_number}}</a></td>
+                                    <td>{{info.order_date}}</td>
+                                    <td>{{info.order_type}}</td>
+                                    <td>{{info.status}}</td>
+                                    <td>{{info.ca_nr}}</td>
+                                    <td>{{info.order_number}}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -550,9 +549,23 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
-    <script src="js/angular-route.js"></script>
-    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="index.js"></script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 

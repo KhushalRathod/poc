@@ -1,11 +1,12 @@
 var app = angular.module('app', ['ngRoute']);
 
 app.config(
-    function($routeProvider){
+    function ($routeProvider) {
         $routeProvider.
-        when('/orders',{
-            templateUrl : 'order.html'
-        })
+            when('/orders', {
+                templateUrl: 'order.html',
+                controller: 'account'
+            })
     });
 
 app.controller("HelloWorldCtrl", function ($scope) {

@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
-    <script src="mobile_voice_services_subscription_usage.js"></script>
+    <script src="js/mobile_voice_services_subscription_usage.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -22,30 +22,30 @@
 <body ng-controller="MainCtrl">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-4" style="margin-top: 30px;padding: 0px;">
+            <div class="col-md-4" style="margin-top: 30px;padding: 0px;">
 
-                <div class="col-xs-12" style="padding-left: 3px;padding-right: 0px;">
-                    <div class="col-xs-2" style="padding-left: 2px;padding-right: 2px;">
-                        <label for="inputxs">Event Date</label>
+                <div class="col-md-12" style="padding-left: 3px;padding-right: 0px;">
+                    <div class="col-md-2" style="padding-left: 2px;padding-right: 2px;">
+                        <label for="inputmd">Event Date</label>
                         <div class="input-group">
                             <input class="form-control input-sm" ui-date="opts" ng-model="data.valor" readonly=""
                                 style="padding:0px;"><span class="input-group-addon" style="padding:1px;">
                                 <i class="fa fa-calendar" style="font-size: 10px;color: black;"></i></span></input>
                         </div>
                     </div>
-                    <div class="col-xs-2" style="padding-left: 2px;padding-right: 2px;">
+                    <div class="col-md-2" style="padding-left: 2px;padding-right: 2px;">
                         <div class="form-group">
-                            <label for="inputxs">A-Number</label>
+                            <label for="inputmd">A-Number</label>
                             <input class="form-control input-sm" id="inputsma" type="text">
                         </div>
                     </div>
-                    <div class="col-xs-2" style="padding-left: 2px;padding-right: 2px;">
+                    <div class="col-md-2" style="padding-left: 2px;padding-right: 2px;">
                         <div class="form-group">
-                            <label for="inputxs">A-Number</label>
+                            <label for="inputmd">A-Number</label>
                             <input class="form-control input-sm" id="inputsmb" type="text">
                         </div>
                     </div>
-                    <div class="col-xs-2" style="padding-left: 2px;padding-right: 2px;">
+                    <div class="col-md-2" style="padding-left: 2px;padding-right: 2px;">
                         <div class="form-group">
                             <label for="sel3">Event</label>
                             <select class="form-control input-sm" id="sel3">
@@ -55,16 +55,16 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-xs-2" style="padding-left: 2px;padding-right: 2px;">
+                    <div class="col-md-2" style="padding-left: 2px;padding-right: 2px;">
                         <div class="form-group">
-                            <label for="inputxs">Duration/Volume</label>
+                            <label for="inputmd">Duration/Volume</label>
                             <input class="form-control" id="disabledInput" type="text" placeholder="" disabled
                                 style="height:30px;">
                         </div>
                     </div>
-                    <div class="col-xs-2" style="padding-left: 2px;padding-right: 2px;">
+                    <div class="col-md-2" style="padding-left: 2px;padding-right: 2px;">
                         <div class="form-group">
-                            <label for="inputxs"
+                            <label for="inputmd"
                                 style="margin-top: -11px;border-left-width: 0px;margin-left: 13px;">Price<br />(incl.VAT)</label>
                             <input class="form-control" id="disabledInput" type="text" placeholder="" disabled
                                 style="height:30px;">
@@ -72,14 +72,14 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12" style="padding:0px;">
-                    <div class="col-xs-9"></div>
-                    <div class="col-xs-3" style="padding:0px;">
+                <div class="col-md-12" style="padding:0px;">
+                    <div class="col-md-9"></div>
+                    <div class="col-md-3" style="padding:0px;">
                         <a href="" target="" style="font-size: 11px;">Reset to default query</a>
                     </div>
                 </div>
 
-                <div class="col-xs-12" style="padding-left: 3px;padding-right: 0px;">
+                <div class="col-md-12" style="padding-left: 3px;padding-right: 0px;">
                     <table class="fixed_header">
                         <tbody id="style-4">
                             <tr>
